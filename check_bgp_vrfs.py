@@ -90,7 +90,7 @@ class BGP_Neighbors_Established(aetest.Testcase):
             vrfs_dict = bgp['instance']['default']['vrf']
 
             for vrf_name, vrf_dict in vrfs_dict.items():
-                if vrf_name:
+                if vrf_list:
                     if vrf_name in vrf_list:
                         # If no neighbor for default VRF, then set the neighbors value to {}
                         neighbors = vrf_dict.get('neighbor', {})

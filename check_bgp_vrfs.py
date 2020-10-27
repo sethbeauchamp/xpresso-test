@@ -79,7 +79,7 @@ class BGP_Neighbors_Established(aetest.Testcase):
                             goto=['common_cleanup'])
 
     @ aetest.test
-    def check_bgp(self, vrf_list):
+    def check_bgp(self, vrf_list=None):
         """ Sample test section. Only print """
 
         failed_dict = {}

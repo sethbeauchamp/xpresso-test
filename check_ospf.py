@@ -57,7 +57,7 @@ class common_setup(aetest.CommonSetup):
 ###################################################################
 
 
-class BGP_Neighbors_Established(aetest.Testcase):
+class OSPF_Information(aetest.Testcase):
     """ This is user Testcases section """
 
     # First test section
@@ -71,9 +71,9 @@ class BGP_Neighbors_Established(aetest.Testcase):
             ospf = dev.learn('ospf')
             ospf.learn()
             if hasattr(ospf, 'info'):
-                self.all_bgp_sessions[dev.name] = bgp.info
+                self.all_ospf[dev.name] = ospf.info
             else:
-                self.failed("Failed to learn BGP info from device %s" % dev.name, 
+                self.failed("Failed to learn OSPF info from device %s" % dev.name, 
                             goto=['common_cleanup'])
 
 # #####################################################################

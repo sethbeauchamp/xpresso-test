@@ -76,6 +76,16 @@ class OSPF_Information(aetest.Testcase):
                 self.failed("Failed to learn OSPF info from device %s" % dev.name, 
                             goto=['common_cleanup'])
 
+    @ aetest.test
+    def check_ospfself):
+        """ Sample test section. Only print """
+        failed_dict = {}
+        mega_tabular = []
+        for device, ospf in self.all_ospf.items():
+            log.info("Device {d} Table:\n".format(d=device))
+            log.info(ospf)
+        self.passed('OSPF passed')
+
 # #####################################################################
 # ####                       COMMON CLEANUP SECTION                 ###
 # #####################################################################

@@ -64,7 +64,6 @@ class BGP_Neighbors_Established(aetest.Testcase):
     @ aetest.test
     def learn_bgp(self):
         """ Sample test section. Only print """
-        print(self.parameters)
         self.all_bgp_sessions = {}
         for dev in self.parent.parameters['dev']:
             log.info(banner("Gathering BGP Information from {}".format(

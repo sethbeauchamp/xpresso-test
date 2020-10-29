@@ -17,6 +17,6 @@ def main(runtime):
         vrf_list = args.vrf_list.split()
     else:
         vrf_list = None
-    runtime.tasks.run(testscript=bgp_tests, vrf_list = vrf_list)    
     # Execute the testscript
-    runtime.tasks.run(testscript=bgp_tests)
+    runtime.tasks.run(testscript=bgp_tests, vrf_list = vrf_list)    
+    

@@ -77,7 +77,7 @@ class OSPF_Information(aetest.Testcase):
                             goto=['common_cleanup'])
 
     @ aetest.test
-    def check_ospfself):
+    def check_ospf(self):
         """ Sample test section. Only print """
         failed_dict = {}
         mega_tabular = []
